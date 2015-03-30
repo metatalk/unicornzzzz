@@ -1,0 +1,418 @@
+// bower:scss
+// endbower
+
+
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #FFF;
+  background: url(../images/bg.jpg) no-repeat #5B305B;
+  background-size: cover;
+  margin: 0;
+}
+
+@media(max-width: 768px) {
+  .sparkle-canvas {
+    max-width: 100%;
+  }
+}
+
+a,a:visited {
+  color: #FFF;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px 60px 20px;
+}
+
+.site-header {
+  padding-bottom: 10px;
+}
+
+.logo {
+  margin: 95px 0 40px 0;
+  max-width: 240px;
+}
+
+.logo-title {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+}
+
+@media(min-width: 768px) {
+  .logo {
+
+    margin: 25px 0 10px 0;
+  }
+}
+
+h1 {
+  font-family: "Lobster",sans-serif;
+  font-size: 46px;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: "Lobster",sans-serif;
+  font-size: 30px;
+  margin-top: 0;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 32px;
+  } 
+}
+
+p {
+  max-width: 940px;
+  margin: 24px auto;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+li {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+form {
+  margin: 0 0 40px 0;
+  @media (max-width: 768px) {
+    .btn {
+      margin-top: 10px;
+    }    
+  }
+}
+
+input {
+  font-family: "Lato",sans-serif;
+  border: none;
+  padding: 16px 24px;
+  font-size: 16px;
+  width: 300px;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  background: #da00c5;
+  font-size: 16px;
+  text-decoration: none;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  padding: 16px 24px;
+  transition: transform 0.1s linear;
+  &:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+  }
+  span {
+    display: none;
+    @media (min-width: 768px) {
+      display: inline;
+      
+    }
+  }
+}
+
+.btn-large {
+  border: 4px solid #FFF;
+  font-size: 18px;
+  padding: 20px 40px;
+  font-weight: 900;
+}
+
+.subscribe-top {
+  text-align: center;
+  background: rgba(0,0,0,0.25);
+  padding: 20px 0;
+  box-sizing: border-box;
+  @media (min-width: 768px) {
+    padding: 20px 0 10px 0;
+  }
+}
+
+.what {
+  overflow: hidden;
+  h1 {
+    margin-bottom: 20px;
+  }
+  .col p,.col li {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+  @media (max-width: 768px) {
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  li {
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+      list-style: none;
+      padding-left: 0;
+    }
+  }
+
+}
+
+.col {
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .col {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 30px 50px 0 50px;
+    border: none;
+  }
+  
+}
+
+.tickets {
+  margin: 0 0 20px 0;
+  position: relative;
+  z-index: 100000;
+  h1 {
+    margin: 0;
+  }
+  p {
+    margin-bottom: 50px;
+  }
+}
+
+.speakers h1 {
+  margin-bottom: 0;
+}
+
+.speakers > p {
+  margin-bottom: 40px;
+}
+
+
+.speaker {
+  //position: absolute;
+  //left: 10%;
+  //top: 40px;
+  text-align: center;
+  vertical-align: top;
+  padding: 0 10px;
+  margin-bottom: 45px;
+  box-sizing: border-box;
+  img {
+    margin-bottom: 10px;
+  } 
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.speaker-company {
+  margin-top: -30px;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .speaker {
+    width: 32%;
+    display: inline-block;
+  }
+  .speaker-company {
+    margin-top: -30px;
+  }
+}
+
+
+
+.speaker-description {
+  font-size: 15px;
+  margin-top: 0;
+  line-height: 22px;
+  a {
+    text-decoration: underline;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.share {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  div:first-child {
+    margin-bottom: 8px;
+  }
+}
+
+.share-post {
+  position: fixed;
+  @media (max-width: 1124px) {
+    z-index: 100000;
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: darken(#da00c5,20%);
+    padding: 10px 20px 20px 20px;
+    text-align: center;
+  }
+}
+
+.share-inpost {
+  position: relative;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.share-btn {
+  background: rgba(0,0,0,0.4);
+  display: inline-block;
+  padding: 12px 12px 10px 12px;
+  transition: transform 0.1s linear;
+  position: relative;
+  cursor: pointer;
+  transition: top 0.1s linear;
+  top: 0;
+  &:hover {
+    top: -4px;
+  }  
+  img {
+    height: 20px;
+  }
+}
+
+.subscribe-form-post {
+  background: rgba(0,0,0,0.25);
+  text-align: center;
+  padding: 25px 20px;
+  margin-top: 60px;
+  @media (max-width: 1124px) {
+    padding-bottom: 80px;
+  }
+}
+
+.embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; 
+  height: 0; 
+  overflow: hidden;
+  margin-bottom: 20px;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.blog-post {
+  text-align: left;
+    
+  header {
+    padding: 200px 0 50px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 40px;
+  }
+  p, .embeds, ul, > div, h2 {
+    padding-left: 0;
+    max-width: 790px;
+    margin: 0 auto 28px auto;
+    padding: 0 15px 0 15px;
+  }
+  li {
+    margin-left: 20px;
+  }
+  h1 {
+    line-height: 1.1;
+    margin: 0;
+    margin: 0 auto 40px auto;
+    max-width: 790px;
+  }
+  .unstyled {
+    list-style: none;
+    li {
+      margin-left: 0;
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+  }
+}
+
+.program {
+  overflow: hidden;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      padding: 10px 0;
+      overflow: hidden;
+      &:nth-child(even) {
+        background: rgba(255,255,255,0.1);
+      } 
+    }
+    li span {
+      width: 70%;
+      float: left;
+    }
+    li span:first-child {
+      font-weight: 700;
+      width: 30%;
+      font-size: 15px;
+      padding-left: 10px;
+      box-sizing: border-box;
+    }
+    em {
+      font-size: 16px;
+    }
+  }
+  .col1 {
+    width: 65%;
+    padding-top: 10px;
+  }
+  .col2 {
+    width: 35%;
+    padding-top: 10px;
+  }
+}
