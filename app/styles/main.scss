@@ -48,6 +48,7 @@ img {
   z-index: 1000;
 }
 
+
 @media(min-width: 768px) {
   .logo {
 
@@ -78,13 +79,24 @@ h2 {
   } 
 }
 
-p {
+p, address {
   max-width: 940px;
   margin: 24px auto;
   font-size: 21px;
   line-height: 30px;
   font-weight: 300;
   letter-spacing: 1px;
+}
+
+
+address {
+  font-style: normal;
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 26px;
+  a {
+    text-decoration: none;
+  }
 }
 
 li {
@@ -407,12 +419,14 @@ footer {
       font-size: 16px;
     }
   }
+  @media (min-width: 768px) {
   .col1 {
-    width: 65%;
+    width: 60%;
     padding-top: 10px;
   }
   .col2 {
-    width: 35%;
+    width: 40%;
     padding-top: 10px;
+  }
   }
 }
