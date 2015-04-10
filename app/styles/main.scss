@@ -159,10 +159,13 @@ input {
 .subscribe-top {
   text-align: center;
   background: rgba(0,0,0,0.25);
-  padding: 20px 0;
+  padding: 10px 0 20px 0;
   box-sizing: border-box;
   @media (min-width: 768px) {
-    padding: 20px 0 10px 0;
+    padding: 20px 0 20px 0;
+  }
+  p {
+    margin-top: 0;
   }
 }
 
@@ -366,7 +369,7 @@ footer {
     background-position: center;
     margin-bottom: 40px;
   }
-  p, .embeds, ul, > div, h2 {
+  p, .embeds, ul, ol, > div, h2 {
     padding-left: 0;
     max-width: 790px;
     margin: 0 auto 28px auto;
@@ -380,6 +383,9 @@ footer {
     margin: 0;
     margin: 0 auto 40px auto;
     max-width: 790px;
+    small {
+      font-size: 42px;
+    }
   }
   .unstyled {
     list-style: none;
@@ -389,6 +395,14 @@ footer {
       font-size: 20px;
     }
   }
+  iframe {
+    width: 100%;
+    height: 920px;
+    max-width: 1024px;
+    margin: 20px auto;
+    display: block;
+    border-width: 0;
+  } 
 }
 
 .program {
@@ -428,5 +442,54 @@ footer {
     width: 40%;
     padding-top: 10px;
   }
+  }
+}
+
+.posts {
+  overflow: hidden;
+}
+
+.speaker-quote {
+  background: rgba(255,255,255,0.1);
+  margin-bottom: 60px;
+  padding: 20px 0;
+  blockquote {
+    font-size: 28px;
+    font-weight: 100;
+    font-style: italic;
+  }
+}
+
+.partners {
+  padding-bottom: 30px;
+  > div {
+    margin: 15px 0 30px 0;
+  }
+  img {
+    max-height: 40px;
+    vertical-align: middle;
+    padding: 0 20px;
+
+  }
+  a {
+    text-decoration: none;
+  }
+  .partner-thesedays img {
+    max-height: 60px;
+  }
+  .partner-idealabs img {
+    max-height: 70px;
+  }
+
+  .partner-wolf img {
+    max-height: 27px;
+  }
+
+  .partner-deloitte img {
+    height: 25px;
+  }
+  .partner-laga img {
+    height: 35px;
+    padding-top: 3px;
   }
 }
